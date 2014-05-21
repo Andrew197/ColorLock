@@ -1,0 +1,2 @@
+all of the files in this sources directory
+MUST be placed in c:/program files/mirc/addons.

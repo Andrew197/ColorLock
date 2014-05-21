@@ -1,0 +1,42 @@
+----------------------------------------------
+Colorlock Install Guide
+----------------------------------------------
+
+1) Run colorlock.exe, and extract all files to your main mirc directory
+(usually C:/program files/mIRC. 
+
+2) Launch mIRC if you haven't already, and join a channel.
+
+3) enter the following command in the text bar:
+
+/load -rs addons/colorlock.mrc, and select "Run initialization commands". this is important.
+
+and colorlock will be installed into mIRC.
+
+----------------------------------------------
+Setting your color
+----------------------------------------------
+
+You can change your color settings by right-clicking in a channel or PM window,
+and selecting Colorlock from the menu.
+
+You can use a number from 0 to 15 for your color as follows:
+
+0 white		8 yellow
+1 black		9 lightgreen
+2 blue		10 cyan
+3 green		11 lightcyan
+4 red		12 lightblue
+5 brown		13 pink
+6 purple		14 grey
+7 orange		15 lightgrey
+
+Supported control codes:
+
+ctrl+B = bold
+ctrl+U = underlined
+
+----------------------------------------------
+Need help?
+----------------------------------------------
+Refer to the "colorhelp.txt" file included, or the "help" button in the colorlock dialog..

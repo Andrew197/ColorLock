@@ -1,0 +1,141 @@
+Colorlock Documentation and Help
+
+-------------------------------------------------------------------------------
+Installing
+-------------------------------------------------------------------------------
+To install colorlock, refer to the included "How to Install" guide.
+
+-------------------------------------------------------------------------------
+Uninstalling
+-------------------------------------------------------------------------------
+There are two ways of uninstalling the script:
+
+-Using the uninstall function of the GUI menu. This is the preferred method,
+as it ensures that all variables and data stored by the addon are completely deleted.
+
+-using this command: /unload -rs colorlock/colorlock.mrc
+
+----------------------------------------------
+Setting your color
+----------------------------------------------
+
+You can change your color settings by right-clicking in a channel or PM window,
+and selecting Colorlock from the menu.
+
+You can use a number from 0 to 15 for your color as follows:
+
+0 white		8 yellow
+1 black		9 lightgreen
+2 blue		10 cyan
+3 green		11 lightcyan
+4 red		12 lightblue
+5 brown		13 pink
+6 purple		14 grey
+7 orange		15 lightgrey
+
+Supported control codes:
+
+ctrl+B = bold
+ctrl+U = underlined
+
+-------------------------------------------------------------------------------
+F-key Triggers
+-------------------------------------------------------------------------------
+
+You can use the F11 key to change your colorlock settings.
+
+To enable this option, open the menu and check the box "Use F11 Keys" on the Settings tab.
+
+THe F-Key Commands are as follows:
+
+F11 - Enable or Disable Colorlock.
+Control+F11 - Random Color
+
+
+
+-------------------------------------------------------------------------------
+Other Information
+-------------------------------------------------------------------------------
+Messages beginning with the following characters will NOT be colorized, in order to ensure commands will be processed.
+
+/ - forward Slash, for mirc commands
+@ - for some bots
+! - for some bots
+
+Bold underlined, and highlighted text are all supported.
+
+bold: ctrl+B
+underline: ctrl+u
+
+highlighted: <text>, <highlight>
+example: 2,4 gives you blue text with a red highlight.
+
+-------------------------------------------------------------------------------
+The /clr Master Command
+-------------------------------------------------------------------------------
+/clr is an intelligent alias that can be used to change your color settings, and many other options with a single command.
+
+Examples:
+
+/clr 3 sets your text color to 3, or red.
+/clr red also does this.
+
+/clr off will turn colorlock off.
+
+LIST OF SUPPORTED /CLR COMMANDS:
+
+/clr <number><bold><underline>	 changes color settings
+/clr on 				Enables colorlock.
+/clr off				Disables colorlock.
+/clr uninstall			Uninstall colorlock
+/clr reset				reset to default settings.
+/clr random			random color
+/clr help				opens this file
+/clr guion				use GUI menu
+/clr guioff				use right click menu
+/clr nomenu			for minimalists: disables all menus, use /clr only
+
+Color settings via text:
+these are mostly self-explanatory.
+
+/clr white
+/clr black	
+/clr blue
+/clr green
+/clr red
+/clr brown
+/clr purple
+/clr orange
+/clr yellow
+/clr lightgreen
+/clr cyan
+/clr lightcyan
+/clr lightblue
+/clr pink
+/clr grey
+/clr lightgrey
+
+the /clr command can be disabled if it happens to conflict with any other scripts, with this command:
+
+/disable #clr
+
+
+-------------------------------------------------------------------------------
+Troubleshooting
+-------------------------------------------------------------------------------
+When using bold with color, it is reccomended to place the color number BEFORE the bold character, for best results. This goes for both the menus and the /clr command.
+example for bolded green text: 3<bold>
+
+using <bold>3 may yield strange results, but this is a limitation in mirc's scripting language.
+<bold><color>3 will also work, but is longer.
+
+This program was tested with mIRC version 6.16 and 6.21.
+The proper location to install this script may differ in new versions of mIRC,
+as the settings folders were moved to the user's Application Data folders.
+
+-------------------------------------------------------------------------------
+Credits
+-------------------------------------------------------------------------------
+Coding: Andrew Pinion
+Graphics: Andrew Pinion
+Testing: Jim Knoll
