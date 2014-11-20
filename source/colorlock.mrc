@@ -2,9 +2,8 @@
 ;Colorlock
 ;Version 2.0 (3-24-09)
 By Andrew Pinion
-;Visit http://megalith.us/ for updates and online documentation.
+;Visit http://github.com/andrew197 for more mIRC software.
 ;-----------------------------------------------------------------------------------
-
 
 ;--------------------------------------------------------------
 ;Initialization commands and Default Settings
@@ -51,23 +50,18 @@ on 1:UNLOAD: {
   /colorlock.uninstall
 }
 
-
-
 ;--------------------------------------------
 ;Version Information
 ;--------------------------------------------
 
 #colorver off
-ctcp 1:MEGALITH:*:{ 
+ctcp 1:CLVERSION:*:{ 
   //ctcpreply $nick VERSION %CLver
 }
 
 ctcp 1:CLDIAG:*:{ 
-
-
   //ctcpreply $nick VERSION %CLver
   //ctcpreply $nick Colorsetting: %colornum
-
 }
 #colorver end
 
@@ -113,8 +107,6 @@ alias menucheck {
   }
 }
 
-
-
 #newmenu on
 
 menu channel {
@@ -157,7 +149,6 @@ dialog Colorlock {
   button "Help", 14, 6 51 32 12, tab 3
   button "Check for Updates", 17, 42 51 50 12, tab 3
 }
-
 
 ;----------------------------------------------------
 ;Menu Interface Processing - Initialization
